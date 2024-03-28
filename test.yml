@@ -1,3 +1,18 @@
 - pipeline: "test "
   on: "CLICK"
+  refs:
+  - ":default"
   fail_on_prepare_env_warning: true
+  actions:
+  - action: "Lint Dockerfile"
+    type: "DOCKERFILE_LINTER"
+    local_path: "Dockerfile"
+    shell_type: "sh"
+  - action: "Build Docker image"
+    type: "DOCKERFILE"
+    integration: "D0ygW9QqM7e5VYOBa2vp5lo4BG"
+    docker_image_tag: "firmware"
+    dockerfile_path: ""
+    repository: "noke-firmware/firmarebuild"
+    registry: "us-east1-docker.pkg.dev"
+    do_not_prune_images: true
