@@ -11,7 +11,7 @@
     shell_type: "sh"
   - action: "Build Docker image"
     type: "DOCKERFILE"
-    integration: "D0ygW9QqM7e5VrMXa2vp5lo4BG"
+    integration: "D0ygW9QqM7e5VYOBa2vp5lo4BG"
     docker_image_tag: "firmware"
     dockerfile_path: ""
     repository: "noke-firmware/firmarebuild"
