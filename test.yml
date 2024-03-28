@@ -14,6 +14,6 @@
     integration: "D0ygW9QqM7e5VYOBa2vp5lo4BG"
     docker_image_tag: "firmware"
     dockerfile_path: ""
-    repository: "noke-firmware/firmarebuild"
+    repository: "noke-firmware/firmarebuild/imageEnv"
     registry: "us-east1-docker.pkg.dev"
     do_not_prune_images: true
