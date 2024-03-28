@@ -3,3 +3,13 @@
   refs:
   - "refs/heads/main"
   fail_on_prepare_env_warning: true
+  actions:
+  - action: "Run Docker Container"
+    type: "RUN_DOCKER_CONTAINER"
+    integration: "D0ygW9QqM7e5VYOBa2vp5lo4BG"
+    docker_image_name: "noke-firmware/firmarebuild/imagenv"
+    docker_image_tag: "firmware"
+    registry: "us-east1-docker.pkg.dev"
+    mount_filesystem_disable: true
+    volume_mappings: []
+    cache_base_image: false
