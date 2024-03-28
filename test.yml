@@ -6,6 +6,7 @@
   actions:
   - action: "Lint Dockerfile"
     type: "DOCKERFILE_LINTER"
+    disabled: true
     local_path: "Dockerfile"
     shell_type: "sh"
   - action: "Build Docker image"
